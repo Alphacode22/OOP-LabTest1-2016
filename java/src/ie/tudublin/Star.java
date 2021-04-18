@@ -88,8 +88,6 @@ public class Star {
     public void setAbsMag(double absMag) {
         this.absMag = absMag;
     }
-
-   
-    
+  
 }
 
