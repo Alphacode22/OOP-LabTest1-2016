@@ -8,11 +8,13 @@ import processing.data.TableRow;
 
 public class StarMap extends PApplet{
     ArrayList<Star> stars = new ArrayList<Star>();
+    private float border = 50;
 
     @Override
     public void settings() {
         // TODO Auto-generated method stub
         super.settings();
+        colorMode(HSB);
     }
 
     @Override
@@ -20,6 +22,7 @@ public class StarMap extends PApplet{
         // TODO Auto-generated method stub
         super.setup();
         loadData();
+        printStars();
     }
 
     public void loadData(){
@@ -31,7 +34,18 @@ public class StarMap extends PApplet{
         }
     }
 
+    public void printStars(){
+        for(Star s: stars){
+            //s.toString();
+            println(s);
+        }
+    }
+
+    @Override
+    public void draw() {
+        // TODO Auto-generated method stub
+        super.draw();
 
 
-
+    }
 }
