@@ -89,5 +89,6 @@ public class Star {
         this.absMag = absMag;
     }
   
+    
 }
 
